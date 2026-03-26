@@ -30,25 +30,25 @@ export default function Navbar() {
             <li>
              <div className="flex flex-col items-center justify-center gap-2">
                <Link 
-                 href="/try-out-demo"
+                 href="/try-our-demo"
                  className="text-xs font-medium tracking-wide transition-opacity text-nt-cream/85 hover:text-nt-cream"
                >
-                 Try our demos
+                 Try our demo
                </Link>
-                <div className={`h-3 -skew-x-40 border w-[120px] ${path === '/try-out-demo' ?'bg-white':''}`}/>
+                <div className={`h-3 -skew-x-40 border w-[120px] ${path === '/try-our-demo' ?'bg-white':''}`}/>
              </div>
            </li>
          </ul>
    
          <div className="items-center hidden gap-4 sm:flex ">
-          <a href="#" className="text-xs font-medium tracking-wide transition-opacity text-nt-cream/85 hover:text-nt-cream">Docs</a>
+          <a href="https://docs.nicetry.xyz"  target="_blank" className="text-xs font-medium tracking-wide transition-opacity text-nt-cream/85 hover:text-nt-cream">Docs</a>
            <a
-             href="#"
+             href="https://github.com/orgs/RivaLabs-Core/repositories" target="_blank"
              className="text-xs font-medium tracking-wide transition-opacity text-nt-cream/85 hover:text-nt-cream"
            >
              Github
            </a>
-           <a href="#" className="transition-opacity text-nt-cream/85 hover:text-nt-cream">
+           <a href="https://x.com/nicetry_xyz"  target="_blank" className="transition-opacity text-nt-cream/85 hover:text-nt-cream">
              <div className="h-[18px] w-[18px]" >
                <svg
   

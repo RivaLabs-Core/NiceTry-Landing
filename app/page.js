@@ -10,8 +10,8 @@ function InfoSection() {
   return (
     <div className="absolute top-0 flex flex-col items-end gap-1 text-right right-8 animate-fade-in-right animation-delay-200 md:right-12">
       <p className="text-lg font-semibold tracking-wide text-nt-cream">
-        {">"} A <span className=" text-[#6C80FF]">Wallet</span> infrastructure,
-        Built on <span className=" text-[#6C80FF]">Ephemeral Key</span> pairs
+        {">"}<span className=" text-[#6C80FF]">Wallet</span> infrastructure
+        built on <span className=" text-[#6C80FF]">Ephemeral Key</span> pairs
       </p>
 
       <p className="text-lg font-semibold tracking-wide text-nt-cream">
@@ -79,14 +79,12 @@ function ButtonContainer() {
         <span className="flex h-4 w-4 items-center justify-center rounded-[3px] bg-nt-blue-check">
           <span className="h-2 w-2 rounded-[2px] bg-nt-blue-accent" />
         </span>
-        <span className="font-normal">live on</span>
-        <span className="font-bold">base sepolia</span>
       </div>
 
       {/* CTA Buttons */}
       <div className="flex flex-col gap-4 sm:flex-row">
         <a
-          href="#"
+          href="/try-our-demo"
           className="group border border-nt-cream p-1.5 transition-all"
         >
           <span className="  flex items-center justify-center bg-nt-blue-primary px-16 py-3 text-base font-bold uppercase tracking-wider text-nt-cream transition-all bg-[#3F56E3] group-hover:bg-[#5D73FF] group-hover:shadow-[0_0_30px_rgba(63,86,227,0.4)]">
@@ -95,7 +93,7 @@ function ButtonContainer() {
         </a>
 
         <a
-          href="#"
+          href="https://docs.nicetry.xyz/"  target="_blank"
           className="group border border-nt-cream p-1.5 transition-all"
         >
           <span className="flex items-center justify-center  bg-transparent px-16 py-3 text-base font-bold uppercase tracking-wider text-nt-cream transition-all hover:bg-nt-cream/[0.06] hover:shadow-[0_0_20px_rgba(248,255,224,0.08)] hover:bg-white hover:text-[#5D73FF]">
@@ -131,16 +129,16 @@ export default function NiceTryLanding() {
       <main className="relative z-[5] flex min-h-[calc(100vh-90px)] flex-col items-center justify-center px-4 py-16  sm:border rounded-[32px]">
         <div className="relative flex items-center justify-between w-full ">
           <span className=" hidden md:flex lg:hidden z-[5] text-sm font-medium text-nt-cream/70 animate-fade-in-up animation-delay-800 uppercase">
-            / rivalabs.xyz
+            / riva.xyz
           </span>
           <InfoSection />
         </div>
         <CentreContent />
         <ButtonContainer />
 
-        <span className="  absolute lg:bottom-8 lg:left-20 md:hidden lg:flex bottom-5 left-1/2   -translate-x-1/2    z-[5] text-sm font-medium text-nt-cream/70 animate-fade-in-up animation-delay-800 ">
-          / rivalabs.xyz
-        </span>
+        <a href="https://riva.xyz/"  target="_blank" className="  absolute lg:bottom-8 lg:left-20 md:hidden lg:flex bottom-5 left-1/2   -translate-x-1/2    z-[5] text-sm font-medium text-nt-cream/70 animate-fade-in-up animation-delay-800 ">
+          / riva.xyz
+        </a>
       </main>
     </div>
   );
