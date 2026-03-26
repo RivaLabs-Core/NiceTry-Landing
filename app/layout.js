@@ -13,6 +13,9 @@ export const metadata = {
   title: "NiceTry — Quantum-safe Wallet Infrastructure",
   description:
     "A wallet infrastructure built on ephemeral key pairs. Quantum-safe by design. Live on Base Sepolia.",
+  icons: {
+    icon: "/logo.svg",
+  },
 };
 
 export default function RootLayout({ children }) {
