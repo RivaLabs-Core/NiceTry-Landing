@@ -49,7 +49,7 @@ function CentreContent() {
               width={1000}
               height={1000}
               priority
-              src={"/Logo.svg"}
+              src={"/logo.svg"}
               alt=""
               className="w-full h-full rotate-0 logo"
             />{" "}
