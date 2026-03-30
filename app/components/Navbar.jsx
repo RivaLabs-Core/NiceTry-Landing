@@ -14,7 +14,7 @@ export default function Navbar() {
    
          </div>
    
-         <ul className="flex items-center gap-2">
+         <ul className="flex items-center gap-7">
           
            <li>
              <div className="flex flex-col items-center justify-center gap-2">
@@ -24,18 +24,22 @@ export default function Navbar() {
                >
                  Home
                </Link>
-               <div className={`h-3 -skew-x-40 border w-[120px] ${path === '/' ?'bg-white':''}`}/>
+               
              </div>
            </li>
             <li>
              <div className="flex flex-col items-center justify-center gap-2">
-               <Link 
-                 href="/try-our-demo"
-                 className="text-xs font-medium tracking-wide transition-opacity text-nt-cream/85 hover:text-nt-cream"
-               >
-                 Try our demo
-               </Link>
-                <div className={`h-3 -skew-x-40 border w-[120px] ${path === '/try-our-demo' ?'bg-white':''}`}/>
+             <a 
+  href="#try-out-demo"
+  onClick={(e) => {
+    e.preventDefault();
+    document.getElementById('try-out-demo')?.scrollIntoView({ behavior: 'smooth' });
+  }}
+  className="text-xs font-medium tracking-wide transition-opacity text-nt-cream/85 hover:text-nt-cream"
+>
+  Try our demo
+</a>
+          
              </div>
            </li>
          </ul>

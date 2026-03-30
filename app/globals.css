@@ -23,7 +23,7 @@ html,
 body {
   background: #171622;
   color: #f8ffe0;
-  
+   scroll-behavior: smooth;
 }
 
 /* ── Selection color ── */

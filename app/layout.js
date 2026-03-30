@@ -12,8 +12,8 @@ const poppins = Poppins({
 export const metadata = {
   title: "NiceTry — Quantum-safe Wallet Infrastructure",
   description:
-    "A wallet infrastructure built on ephemeral key pairs. Quantum-safe by design. Live on Base Sepolia.",
-  icons: {
+    "Wallet infrastructure built on ephemeral key pairs. Quantum-safe by design. Live on Base Sepolia.",
+     icons: {
     icon: "/logo.svg",
   },
 };
@@ -23,7 +23,7 @@ export default function RootLayout({ children }) {
     <html lang="en" >
       <body className={`${poppins.className} antialiased"`}>
         <Navbar/>
-        {children}</body>
+        <div >{children}</div></body>
     </html>
   );
 }
