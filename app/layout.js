@@ -14,7 +14,7 @@ export const metadata = {
   description:
     "Wallet infrastructure built on ephemeral key pairs. Quantum-safe by design. Live on Base Sepolia.",
      icons: {
-    icon: "/logo.svg",
+    icon: "/favicon.svg",
   },
 };
 
